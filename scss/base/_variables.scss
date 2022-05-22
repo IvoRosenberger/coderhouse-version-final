@@ -1,0 +1,29 @@
+$bg-color: black;
+$bg-white: white;
+$btn-fondonav: #4e1a1a;
+$btn-active: #792121;
+$btn-fondo: #535353;
+
+$colores: (
+    "primario":#535353,
+    "secundario":#4e1a1a
+);
+
+@each $name,
+$color in $colores {
+    .btn-#{name} {
+        background-color: $color;
+    }
+
+}
+
+$tipografia: (
+    centro:center,
+    px:60px,
+    flex:flex
+);
+
+@mixin formato($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

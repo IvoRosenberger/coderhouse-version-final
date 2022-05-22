@@ -1,0 +1,46 @@
+header {
+	.navbar-brand {
+		margin: 0%;
+		padding-top: 0px;
+		grid-area: header;
+		font-size: 60px;
+		color: white;
+		-webkit-transition: 1s linear;
+		transition: 1s linear;
+		&:hover {
+			-webkit-transform: translate(10%);
+			transform: translate(10%);
+		}
+	}
+	.navbar-nav {
+		color: white;
+	}
+	.nav-item {
+		display: inline;
+		justify-content: end;
+		align-items: center;
+		text-align: right;
+		font-size: 17px;
+		text-transform: uppercase;
+	}
+}
+.cointainer-fluid {
+	background-color: black;
+}
+.navbar-expand-lg {
+	justify-content: space-between;
+}
+.nav-link {
+	color: white;
+	&:active {
+		color: #792121;
+	}
+	&:hover {
+		color: #4e1a1a;
+	}
+}
+.navbar-toggler {
+	background-color: white;
+}
+
+

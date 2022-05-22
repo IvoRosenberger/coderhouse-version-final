@@ -1,0 +1,63 @@
+footer {
+    .row {
+        >* {
+            width: auto;
+        }
+
+        bottom: 0;
+        background-color: $bg-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: map-get($tipografia, centro);
+        grid-area: footer;
+    }
+
+    .nuestrasredes div a img {
+        width: 50px;
+        height: 50px;
+        transform: scale(0.8);
+    }
+}
+
+.logo3 {
+    display: flex;
+    align-items: map-get($tipografia, centro);
+    justify-content: map-get($tipografia, centro);
+    flex-direction: column;
+
+    h4 {
+        font-size: 80px;
+        color: $bg-white;
+    }
+
+    p {
+        font-size: 13px;
+        color: $bg-white;
+    }
+}
+
+nav ul {
+    list-style: none;
+
+    li a {
+        text-decoration: none;
+        color: $bg-white;
+        text-transform: uppercase;
+
+        &:active {
+            color: #792121;
+        }
+
+        &:hover {
+            color: #4e1a1a;
+        }
+    }
+}
+
+.nuestrasredes {
+    color: $bg-white;
+    display: flex;
+    align-items: map-get($tipografia, centro);
+    justify-content: map-get($tipografia, centro);
+    flex-direction: column;
+}

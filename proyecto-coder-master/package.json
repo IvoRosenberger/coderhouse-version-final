@@ -1,0 +1,25 @@
+{
+  "name": "maddog",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hola 👋, Soy Ivo Rosenberger</h1>\r <h3 align=\"center\">Estudiante de programación en Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvoRosenberger/proyecto-coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvoRosenberger/proyecto-coder/issues"
+  },
+  "homepage": "https://github.com/IvoRosenberger/proyecto-coder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

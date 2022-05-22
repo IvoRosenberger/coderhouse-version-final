@@ -1,0 +1,32 @@
+@import "../base/reset";
+@import "../base/variables";
+
+.formulario {
+    font-size: 20px;
+
+    #deje-consulta {
+        width: 450px;
+        height: 300px;
+        font-size: 20px;
+    }
+
+    #enviar,
+    #limpiar {
+        font-size: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 4px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        background-color: $bg-color;
+        color: $bg-white;
+        align-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        padding: 3px;
+
+        &:hover {
+            background-color: rgb(61, 61, 61);
+            color: $bg-white;
+        }
+    }
+}
