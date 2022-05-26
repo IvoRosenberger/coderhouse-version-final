@@ -10,7 +10,7 @@
     <title>MAD DOG | Tú mejor ropa</title>
     <link rel="shortcut icon" href="images/icono.jpg">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylesass.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
@@ -30,13 +30,11 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a>
-                                </li>
                                 <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
-                                <li class="nav-item"><a class="nav-link" href="encontranos.html">Encontranos</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="encontranos.html">Encontranos</a></li>
                                 <li class="nav-item"><a class="nav-link" href="acercanosotros.html">Acerca de
                                         Nosotros</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a>
                             </ul>
                         </div>
                 </nav>
@@ -45,26 +43,45 @@
     </div>
 
     <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Encontranos</li>
+            </ol>
+        </nav>
 
-        <H2>Nuestros Locales</H2>
+
+
+        <h2 class="locales-h2">Nuestros Locales</h2>
         <section class="nuestros-locales">
-            <div>
-                <h4>MadDog Rosario - Italia 848,Rosario,Santa Fé,Argentina</h4>
+            <div class="tiendas">
+                <div>
+                    <h4>SANTA FÉ</h4>
+                    <h5>MadDog Rosario - Italia 848,Argentina</h5>
+                    <a
+                        href="https://www.google.com/maps?ll=-32.945255,-60.648179&z=15&t=m&hl=es&gl=US&mapclient=embed&q=Italia+848+S2000+DER+Santa+Fe">Llevarme
+                        ahí!</a>
+                </div>
+                <div class="map" style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth=""
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Italia%20848+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                            href="https://www.gps.ie/car-satnav-gps/">Car GPS</a>
+                    </iframe>
+                </div>
             </div>
-            <div class="map" style="width: 40%"><iframe width="100%" height="350" frameborder="0" scrolling="no"
-                    marginheight="0" marginwidth=""
-                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Italia%20848+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                        href="https://www.gps.ie/car-satnav-gps/">Car GPS</a>
-                </iframe>
-            </div>
-
-            <div>
-                <h4>MadDog BSAS - 9 de julio 3241,Buenos Aires,Argentina</h4>
-            </div>
-            <div class="map" style="width: 40%"><iframe width="100%" height="350" frameborder="0" scrolling="no"
-                    marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=9%20de%20julio%20%203241%20buenos%20aires+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                        href="https://www.gps.ie/car-satnav-gps/">GPS devices</a></iframe></div>
+            <div class="tiendas">
+                <div>
+                    <h4>CABA</h4>
+                    <h5>MadDog BSAS - 9 de julio 3241,Argentina</h5>
+                    <a
+                        href="https://www.google.com/maps?ll=-34.612187,-58.381225&z=15&t=m&hl=es&gl=US&mapclient=embed&q=Av.+9+de+Julio+3241+C1092+CABA">Llevarme
+                        ahí!</a>
+                </div>
+                <div class="map" style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=9%20de%20julio%20%203241%20buenos%20aires+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                            href="https://www.gps.ie/car-satnav-gps/">GPS devices</a></iframe>
+                </div>
             </div>
 
 

@@ -61,3 +61,12 @@ nav ul {
     justify-content: map-get($tipografia, centro);
     flex-direction: column;
 }
+
+@media (max-width: 576px) {
+    .nuestrasredes {
+        div {
+            display: flex;
+        }
+
+    }
+}

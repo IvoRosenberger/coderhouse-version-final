@@ -1,6 +1,13 @@
 @import "../base/reset";
 @import "../base/variables";
 
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
 .formulario {
     font-size: 20px;
 

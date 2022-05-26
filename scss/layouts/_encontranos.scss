@@ -1,9 +1,59 @@
+@import "../base/reset";
+@import "../base/variables";
+
+.locales-h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .nuestros-locales {
-    h4 {
-        margin: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    align-items: center;
+
+    div {
+        width: 450px;
     }
 
-    .map {
-        margin: 40px 40px;
+    div div {
+        padding: 20px;
+
+        a {
+            font-size: 13px;
+            font-weight: bold;
+            border-radius: 15px;
+            background-color: $bg-color;
+            color: white;
+            align-content: center;
+            text-transform: uppercase;
+            padding: 3px 3px;
+        }
+
+        a:hover {
+            background-color: $btn-fondo;
+        }
+
     }
+}
+
+@media (max-width: 991.98px){
+    .nuestros-locales{
+        div{
+            width: 100%
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .nuestros-locales{
+            display: inline;
+            padding:20px
+        }
+        h2{
+            font-size: 30px;
+        }
 }

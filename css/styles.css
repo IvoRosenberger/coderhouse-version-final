@@ -414,13 +414,44 @@ footer .nuestrasredes {
     color: white;
 }
 
-.nuestros-locales h4 {
-    margin: 40px;
+
+.nuestros-locales {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    align-items: center;
 }
 
-.nuestros-locales .map {
-    margin: 40px 40px;
+.locales-h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
+
+.nuestros-locales a {
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    align-content: center;
+    text-transform: uppercase;
+    padding: 3px 3px;
+}
+
+.nuestros-locales a:hover {
+    background-color: #525252;
+}
+
+.nuestros-locales div{
+    width: 450px;
+}
+
+.nuestros-locales div div{
+    padding: 20px;
+}
+
 
 .box-shadow-menu {
     position: relative;
@@ -548,4 +579,22 @@ footer .nuestrasredes {
     footer .logo3 h4 {
         font-size: 60px;
     }
+}
+
+.breadcrumb{
+    padding-left: 2.5%;
+    margin-top: 16px;
+}
+
+.breadcrumb .breadcrumb-item{
+    list-style: none none;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb-item a{
+    color: black;
+    font-weight: bold;
+
 }

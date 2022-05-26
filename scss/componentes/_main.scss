@@ -1,3 +1,20 @@
+.breadcrumb {
+    padding-left: 2.5%;
+    margin-top: 16px;
+
+    .breadcrumb-item {
+        list-style: none none;
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    a {
+        color: black;
+        font-weight: bold;
+    }
+}
+
 section.hero {
     padding: 0;
 }
@@ -132,7 +149,6 @@ section.hero {
 
 .estar-al-tanto {
     text-align: map-get($tipografia, centro);
-    ;
     padding: 100px 100px;
 
     img {
@@ -144,7 +160,6 @@ section.hero {
 
     h3 {
         text-align: map-get($tipografia, centro);
-        ;
         padding: 10px;
     }
 
@@ -196,15 +211,6 @@ section.hero {
     }
 }
 
-@media (max-width: 768px) {
-    .main1 img {
-        width: 250px;
-    }
-
-    .tit-productos {
-        font-size: 12px;
-    }
-}
 
 @media (max-width: 400.98px) {
     footer .logo3 h4 {

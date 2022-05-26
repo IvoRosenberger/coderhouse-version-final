@@ -1,11 +1,13 @@
 @import "../base/variables";
-.tit-productos h3 {
+
+.tit-productos h2 {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 20px;
     -webkit-transition: 3s ease-in;
     transition: 3s ease-in;
+    font-weight: bold;
 }
 
 .main1 {
@@ -40,5 +42,49 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main1 {
+        img {
+            width: 330px;
+        }
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .main1 {
+        div {
+            width: 270px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .tit-productos {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .tit-productos{
+        font-size: 8px;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
 }
