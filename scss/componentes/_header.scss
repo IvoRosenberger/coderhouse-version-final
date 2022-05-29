@@ -1,5 +1,6 @@
 header {
 	.navbar-brand {
+		float: left;
 		margin: 0%;
 		padding-top: 0px;
 		grid-area: header;
@@ -7,14 +8,17 @@ header {
 		color: white;
 		-webkit-transition: 1s linear;
 		transition: 1s linear;
+
 		&:hover {
 			-webkit-transform: translate(10%);
 			transform: translate(10%);
 		}
 	}
+
 	.navbar-nav {
-		color: white;
+		color: black;
 	}
+
 	.nav-item {
 		display: inline;
 		justify-content: end;
@@ -23,24 +27,50 @@ header {
 		font-size: 17px;
 		text-transform: uppercase;
 	}
-}
-.cointainer-fluid {
-	background-color: black;
-}
-.navbar-expand-lg {
-	justify-content: space-between;
-}
-.nav-link {
-	color: white;
-	&:active {
-		color: #792121;
+
+	.navbar-toggler {
+		float: right;
+		width: 45px;
+		height: 32px;
+		margin: 0.4em 0, 7em;
+		background-color: transparent;
+		color: gray;
+		border: 1px solid grey;
+		border-radius: 3px;
+		cursor: pointer;
 	}
-	&:hover {
-		color: #4e1a1a;
+
+	.navbar-toggler:hover {
+		color: black;
+
 	}
-}
-.navbar-toggler {
-	background-color: white;
-}
+
+	.cointainer-fluid {
+		background-color: black;
+	}
+
+	.navbar-expand-lg {
+		justify-content: space-between;
+	}
+
+	.nav-link {
+		color: white;
+
+		&:active {
+			color: #792121;
+		}
+
+		&:hover {
+			color: #4e1a1a;
+		}
+	}
+
+	.navbar-toggler {
+		background-color: white;
+	}
 
 
+	.custom-toggler.navbar-toggler {
+		border-color: lightgreen;
+}
+}

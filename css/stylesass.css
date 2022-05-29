@@ -53,6 +53,7 @@ button {
 }
 
 header .navbar-brand {
+  float: left;
   margin: 0%;
   padding-top: 0px;
   grid-area: header;
@@ -66,7 +67,7 @@ header .navbar-brand:hover {
   transform: translate(10%);
 }
 header .navbar-nav {
-  color: white;
+  color: black;
 }
 header .nav-item {
   display: inline;
@@ -76,27 +77,40 @@ header .nav-item {
   font-size: 17px;
   text-transform: uppercase;
 }
-
-.cointainer-fluid {
+header .navbar-toggler {
+  float: right;
+  width: 45px;
+  height: 32px;
+  margin: 0.4em 0, 7em;
+  background-color: transparent;
+  color: gray;
+  border: 1px solid grey;
+  border-radius: 3px;
+  cursor: pointer;
+}
+header .navbar-toggler:hover {
+  color: black;
+}
+header .cointainer-fluid {
   background-color: black;
 }
-
-.navbar-expand-lg {
+header .navbar-expand-lg {
   justify-content: space-between;
 }
-
-.nav-link {
+header .nav-link {
   color: white;
 }
-.nav-link:active {
+header .nav-link:active {
   color: #792121;
 }
-.nav-link:hover {
+header .nav-link:hover {
   color: #4e1a1a;
 }
-
-.navbar-toggler {
+header .navbar-toggler {
   background-color: white;
+}
+header .custom-toggler.navbar-toggler {
+  border-color: lightgreen;
 }
 
 .breadcrumb {
@@ -195,7 +209,7 @@ section.hero {
 }
 .sastifaccion div {
   width: 350px;
-  height: 250px;
+  height: auto;
   padding: 20px;
   background-color: white;
   display: flex;
@@ -271,7 +285,13 @@ section.hero {
   color: white;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
+  .sastifaccion div {
+    width: 250px;
+    margin: 20px;
+  }
+}
+@media (max-width: 992px) {
   .somos {
     background-position: center;
   }
@@ -279,13 +299,32 @@ section.hero {
     width: auto;
   }
 
-  .main1 img {
-    width: 300px;
+  .nuevos-productos div div img {
+    width: 250px;
+  }
+
+  .nuevos-productos div div {
+    flex-wrap: wrap;
+    width: 250px;
+  }
+  .nuevos-productos div div h3 {
+    font-size: 25px;
+  }
+  .nuevos-productos div div h3 img {
+    width: 250px;
+  }
+  .nuevos-productos div div h3 img div {
+    font-size: 25px;
   }
 }
 @media (max-width: 400.98px) {
   footer .logo3 h4 {
-    font-size: 60px;
+    font-size: 40px;
+  }
+
+  .estar-al-tanto {
+    padding: 0px;
+    margin: 20px;
   }
 }
 footer .row {
@@ -471,6 +510,11 @@ h2 {
   color: white;
 }
 
+@media (max-width: 992px) {
+  main h2 {
+    font-size: 40px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -647,8 +691,7 @@ button {
     font-size: 8px;
     width: 100%;
   }
-
-  img {
+  .tit-productos img {
     width: 100%;
     display: block;
     margin-bottom: 20px;
