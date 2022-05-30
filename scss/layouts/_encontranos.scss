@@ -40,20 +40,25 @@
     }
 }
 
-@media (max-width: 991.98px){
-    .nuestros-locales{
-        div{
+@media (max-width: 991.98px) {
+    .locales-h2 {
+        font-size: 40px;
+    }
+
+    .nuestros-locales {
+        div {
             width: 100%
         }
     }
 }
 
 @media (max-width: 576px) {
-    .nuestros-locales{
-            display: inline;
-            padding:20px
-        }
-        h2{
-            font-size: 30px;
-        }
+    .locales-h2 {
+        font-size: 27px;
+    }
+
+    .nuestros-locales {
+        display: inline;
+        padding: 20px
+    }
 }

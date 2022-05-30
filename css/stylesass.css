@@ -52,6 +52,12 @@ button {
   list-style: none;
 }
 
+header .navbar-toggler-icon {
+  background-image: url(/images/threelines.png);
+  background-position-x: -10px;
+  background-position-y: -1px;
+  padding: 20px;
+}
 header .navbar-brand {
   float: left;
   margin: 0%;
@@ -109,9 +115,6 @@ header .nav-link:hover {
 header .navbar-toggler {
   background-color: white;
 }
-header .custom-toggler.navbar-toggler {
-  border-color: lightgreen;
-}
 
 .breadcrumb {
   padding-left: 2.5%;
@@ -141,7 +144,7 @@ section.hero {
   width: 100%;
   color: white;
   background-color: black;
-  margin-top: 50px;
+  margin-top: -1px;
 }
 .nuevos-productos > div {
   display: flex;
@@ -206,6 +209,7 @@ section.hero {
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
+  text-align: center;
 }
 .sastifaccion div {
   width: 350px;
@@ -243,7 +247,7 @@ section.hero {
 /* COMIENZO DE EL PARA ESTAR AL TANTO */
 .estar-al-tanto {
   text-align: center;
-  padding: 100px 100px;
+  margin-bottom: 40px;
 }
 .estar-al-tanto img {
   width: 80px;
@@ -286,12 +290,6 @@ section.hero {
 }
 
 @media (max-width: 992px) {
-  .sastifaccion div {
-    width: 250px;
-    margin: 20px;
-  }
-}
-@media (max-width: 992px) {
   .somos {
     background-position: center;
   }
@@ -316,8 +314,18 @@ section.hero {
   .nuevos-productos div div h3 img div {
     font-size: 25px;
   }
+
+  .sastifaccion div {
+    width: 250px;
+    margin: 20px;
+  }
 }
 @media (max-width: 400.98px) {
+  .nuevos-productos h2 {
+    margin-top: -1px;
+    font-size: 30px;
+  }
+
   footer .logo3 h4 {
     font-size: 40px;
   }
@@ -512,7 +520,18 @@ h2 {
 
 @media (max-width: 992px) {
   main h2 {
-    font-size: 40px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  main h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  main h2 {
+    font-size: 20px;
+    text-align: center;
   }
 }
 * {
@@ -604,18 +623,22 @@ button {
 }
 
 @media (max-width: 991.98px) {
+  .locales-h2 {
+    font-size: 40px;
+  }
+
   .nuestros-locales div {
     width: 100%;
   }
 }
 @media (max-width: 576px) {
+  .locales-h2 {
+    font-size: 27px;
+  }
+
   .nuestros-locales {
     display: inline;
     padding: 20px;
-  }
-
-  h2 {
-    font-size: 30px;
   }
 }
 .btn-name {
@@ -676,7 +699,7 @@ button {
     width: 270px;
   }
   .main1 h3 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .main1 img {
     width: 100%;
@@ -687,14 +710,21 @@ button {
   }
 }
 @media (max-width: 576px) {
-  .tit-productos {
-    font-size: 8px;
+  .tit-productos h2 {
+    font-size: 25px;
     width: 100%;
   }
   .tit-productos img {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+  }
+
+  .main1 h3 {
+    font-size: 25px;
+  }
+  .main1 .caract-prod {
+    margin-top: 0px;
   }
 }
 

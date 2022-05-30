@@ -1,4 +1,11 @@
 header {
+	.navbar-toggler-icon {
+		background-image: url(/images/threelines.png);
+		background-position-x: -10px;
+		background-position-y: -1px;
+		padding: 20px;
+	}
+
 	.navbar-brand {
 		float: left;
 		margin: 0%;
@@ -69,8 +76,4 @@ header {
 		background-color: white;
 	}
 
-
-	.custom-toggler.navbar-toggler {
-		border-color: lightgreen;
-}
 }
