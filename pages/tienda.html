@@ -22,23 +22,60 @@
     <div class="container-fluid">
         <header class="row">
             <div class="cointainer-fluid">
-                <nav class="navbar navbar-expand-lg navbar bg">
-                    <a href="../index.html" class="navbar-brand">MadDog</a>
-                    <div class="cointainer-fluid">
-                        <button class="navbar-toggler" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" type="button"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="/index.html">MadDog</a>
+                        <div class="icons-right">
+                            <a class="login-button" href="/pages/login.html"><i class="fa-solid fa-user"></i></a>
+                            <a class="carrito-button" href="/pages/carrito.html"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
-                                <li class="nav-item"><a class="nav-link" href="encontranos.html">Encontranos</a></li>
-                                <li class="nav-item"><a class="nav-link" href="acercanosotros.html">Acerca de
-                                        Nosotros</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a>
-                            </ul>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MadDog</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/pages/tienda.html">Tienda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/pages/encontranos.html">Encontranos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/pages/acercanosotros.html">Acerca De Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Iniciar Sesion
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Login</a></li>
+                                            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
+                    </div>
                 </nav>
             </div>
         </header>
@@ -56,135 +93,206 @@
             </div>
             <section class="main1">
                 <div>
-                    <h3>Buzo Triple-K</h3>
-                    <img src="../images/buzo.jpg" alt="buzo">
+                    <h3 class="item-title">Buzo Triple-K</h3>
+                    <img class="item-image" src="../images/buzo.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4900</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4900</h3>
+                        <button class=addToCart>Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Buzo Urban</h3>
-                    <img src="../images/buzo5.jpg" alt="buzo">
+                    <h3 class="item-title">Buzo Urban</h3>
+                    <img class="item-image" src="../images/buzo5.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4500</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4500</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Buzo Tacuara</h3>
-                    <img src="../images/buzo3.jpg" alt="buzo">
+                    <h3 class="item-title">Buzo Tacuara</h3>
+                    <img class="item-image" src="../images/buzo3.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4700</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4700</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Campera Oslo K</h3>
-                    <img src="../images/campera.jpg" alt="buzo">
+                    <h3 class="item-title">Campera Oslo K</h3>
+                    <img class="item-image" src="../images/campera.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$5200</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$5200</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Campera Oslo KOK</h3>
-                    <img src="../images/campera1.jpg" alt="buzo">
+                    <h3 class="item-title">Campera Oslo KOK</h3>
+                    <img class="item-image" src="../images/campera1.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$5200</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$5200</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Pantalon Flower</h3>
-                    <img src="../images/pantalones.jpg" alt="buzo">
+                    <h3 class="item-title">Pantalon Flower</h3>
+                    <img class="item-image" src="../images/pantalones.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$3900</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$3900</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Buzo BSAS-K</h3>
-                    <img src="../images/buzo bsas.jpg" alt="buzo">
+                    <h3 class="item-title">Buzo BSAS-K</h3>
+                    <img class="item-image" src="../images/buzo bsas.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4900</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4900</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Buzo Colorinche</h3>
-                    <img src="../images/Buzos.jpg" alt="buzo">
+                    <h3 class="item-title">Buzo Colorinche</h3>
+                    <img class="item-image" src="../images/Buzos.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4500</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4500</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Buzo Amarello</h3>
-                    <img src="../images/buzoama.jpg" alt="buzo">
+                    <h3 class="item-title">Buzo Amarello</h3>
+                    <img class="item-image" src="../images/buzoama.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$5700</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$5700</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Buzo Cruel</h3>
-                    <img src="../images/buzoblanconegro.jpg" alt="buzo">
+                    <h3 class="item-title">Buzo Cruel</h3>
+                    <img class="item-image" src="../images/buzoblanconegro.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4600</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4600</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Buzo Pista</h3>
-                    <img src="../images/buzoblue.jpg" alt="buzo">
+                    <h3 class="item-title">Buzo Pista</h3>
+                    <img class="item-image" src="../images/buzoblue.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4500</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4500</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Buzo Bielsa</h3>
-                    <img src="../images/buzoloco.jpg" alt="buzo">
+                    <h3 class="item-title">Buzo Bielsa</h3>
+                    <img class="item-image" src="../images/buzoloco.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4700</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4700</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Coleccion Pela</h3>
-                    <img src="../images/colecciones.jpg" alt="buzo">
+                    <h3 class="item-title">Coleccion Pela</h3>
+                    <img class="item-image" src="../images/colecciones.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$7800</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$7800</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Pantalon Black-k</h3>
-                    <img src="../images/pantalon.jpg" alt="buzo">
+                    <h3 class="item-title">Pantalon Black-k</h3>
+                    <img class="item-image" src="../images/pantalon.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4500</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4500</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Remera Urban-k</h3>
-                    <img src="../images/urban.jpg" alt="buzo">
+                    <h3 class="item-title">Remera Urban-k</h3>
+                    <img class="item-image" src="../images/urban.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$4700</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$4700</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Coleccion Facha</h3>
-                    <img src="../images/buzo2.jpg" alt="buzo">
+                    <h3 class="item-title">Coleccion Facha</h3>
+                    <img class="item-image" src="../images/buzo2.jpg" alt="buzo">
                     <div class="caract-prod">
-                        <h3>$8900</h3>
-                        <a href="#">Agregar</a>
+                        <h3 class="item-price">$8900</h3>
+                        <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                     </div>
                 </div>
 
 
+            </section>
+
+            <section class="shopping-cart">
+                <div class="container">
+                    <h1 class="text-center">CARRITO</h1>
+                    <hr>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="shopping-cart-header">
+                                <h6>Producto</h6>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="shopping-cart-header">
+                                <h6 class="text-truncate">Precio</h6>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="shopping-cart-header">
+                                <h6>Cantidad</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shopping-cart-items shoppingCartItemsContainer">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shopping-cart-total d-flex align-items-center">
+                                <p class="mb-0">Total</p>
+                                <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
+                                <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                    data-delay="2000">
+                                    <div class="toast-header">
+                                        <span>✅</span>
+                                        <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body text-white">
+                                        Se aumentó correctamente la cantidad
+                                    </div>
+                                </div>
+                                <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                                    data-target="#comprarModal">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Pronto recibirá su pedido</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <footer>
@@ -222,7 +330,7 @@
         </main>
         </footer>
     </div>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>

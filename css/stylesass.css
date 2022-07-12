@@ -52,6 +52,9 @@ button {
   list-style: none;
 }
 
+header .fixed-top {
+  background-color: black;
+}
 header .navbar-toggler-icon {
   background-image: url(/images/threelines.png);
   background-position-x: -10px;
@@ -105,7 +108,7 @@ header .navbar-expand-lg {
   justify-content: space-between;
 }
 header .nav-link {
-  color: white;
+  color: black;
 }
 header .nav-link:active {
   color: #792121;
@@ -115,6 +118,33 @@ header .nav-link:hover {
 }
 header .navbar-toggler {
   background-color: white;
+}
+
+.fixed-top {
+  position: relative;
+}
+
+.icons-right {
+  margin-left: auto;
+  padding: 20px;
+}
+
+.login-button {
+  padding: 0px;
+  color: white;
+}
+
+.login-button:hover {
+  color: white;
+}
+
+.carrito-button {
+  padding: 30px;
+  color: white;
+}
+
+.carrito-button:hover {
+  color: white;
 }
 
 .breadcrumb {
@@ -753,7 +783,7 @@ button {
   background-color: #4e1a1a;
 }
 
-.tit-productos h2 {
+.item-title h3 {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -761,6 +791,7 @@ button {
   -webkit-transition: 3s ease-in;
   transition: 3s ease-in;
   font-weight: bold;
+  font-size: 40px;
 }
 
 .main1 {
@@ -771,7 +802,7 @@ button {
 .main1 img {
   width: 380px;
 }
-.main1 a {
+.main1 button {
   font-size: 13px;
   font-weight: bold;
   border-radius: 15px;
@@ -784,13 +815,55 @@ button {
 .main1 div {
   margin-top: 20px;
 }
-.main1 a:hover {
+.main1 button:hover {
   background-color: #535353;
 }
 .main1 .caract-prod {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.item {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 15px;
+}
+
+.item-details > .item-price {
+  margin: 0;
+}
+
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
 }
 
 @media (max-width: 991.98px) {

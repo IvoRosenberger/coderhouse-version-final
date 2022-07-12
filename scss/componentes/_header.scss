@@ -1,4 +1,9 @@
 header {
+	.fixed-top {
+		background-color: black;
+
+	}
+
 	.navbar-toggler-icon {
 		background-image: url(/images/threelines.png);
 		background-position-x: -10px;
@@ -62,7 +67,7 @@ header {
 	}
 
 	.nav-link {
-		color: white;
+		color: black;
 
 		&:active {
 			color: #792121;
@@ -77,4 +82,35 @@ header {
 		background-color: white;
 	}
 
+}
+
+.fixed-top {
+	position: relative;
+}
+
+.icons-right {
+	margin-left: auto;
+	padding: 20px;
+}
+
+.login-button {
+	padding: 0px;
+	color: white;
+}
+
+.login-button {
+	&:hover {
+		color: white;
+	}
+}
+
+.carrito-button {
+	padding: 30px;
+	color: white;
+}
+
+.carrito-button {
+	&:hover {
+		color: white;
+	}
 }

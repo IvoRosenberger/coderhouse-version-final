@@ -22,24 +22,59 @@
 
         <header class="row">
             <div class="cointainer-fluid">
-                <nav class="navbar navbar-expand-lg navbar bg">
-                    <a href="../index.html" class="navbar-brand">MadDog</a>
-                    <div class="cointainer-fluid">
-                        <button class="navbar-toggler" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" type="button"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="/index.html">MadDog</a>
+                        <div class="icons-right">
+                            <a class="login-button" href="/pages/login.html"><i class="fa-solid fa-user"></i></a>
+                            <a class="carrito-button" href="/pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item"><a class="nav-link" href="pages/tienda.html">Tienda</a></li>
-                                <li class="nav-item"><a class="nav-link" href="pages/encontranos.html">Encontranos</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="pages/acercanosotros.html">Acerca de
-                                        Nosotros</a></li>
-                                <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
-                            </ul>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MadDog</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/pages/tienda.html">Tienda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/pages/encontranos.html">Encontranos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/pages/acercanosotros.html">Acerca De Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Iniciar Sesion
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Login</a></li>
+                                            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
+                    </div>
                 </nav>
             </div>
         </header>
@@ -61,7 +96,7 @@
                             <img src="images/buzo.jpg" alt="buzo">
                             <div class="caract-prod">
                                 <h3>$4900</h3>
-                                <a href="#">Agregar</a>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                             </div>
                         </div>
                         <div>
@@ -69,7 +104,7 @@
                             <img src="images/buzo5.jpg" alt="buzo">
                             <div class="caract-prod">
                                 <h3>$4500</h3>
-                                <a href="#">Agregar</a>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                             </div>
                         </div>
                         <div>
@@ -77,7 +112,7 @@
                             <img src="images/buzo3.jpg" alt="buzo">
                             <div class="caract-prod">
                                 <h3>$4700</h3>
-                                <a href="#">Agregar</a>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -91,7 +126,7 @@
                             <img src="images/campera.jpg" alt="campera">
                             <div>
                                 <h3>$5200</h3>
-                                <a href="#">Agregar</a>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                             </div>
                         </div>
                         <div>
@@ -99,7 +134,7 @@
                             <img src="images/campera1.jpg" alt="buzo">
                             <div>
                                 <h3>$5400</h3>
-                                <a href="#">Agregar</a>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                             </div>
                         </div>
                         <div>
@@ -107,7 +142,7 @@
                             <img src="images/pantalones.jpg" alt="buzo">
                             <div>
                                 <h3>$3900</h3>
-                                <a href="#">Agregar</a>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -196,6 +231,7 @@
     </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/carrito.js"></script>
 
 </body>
 
