@@ -12,7 +12,7 @@ const shoppingCartItemsContainer = document.querySelector(
 
 function addToCartClicked(event) {
   const button = event.target;
-  const item = button.closest('.item');
+  const item = button.closest('.iteamAll');
 
   const itemTitle = document.querySelector('.item-title').textContent;
   const itemPrice = document.querySelector('.item-price').textContent;
@@ -23,7 +23,7 @@ function addToCartClicked(event) {
 
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
-    '   '
+    'shoppingCartItemTitle'
   );
   for (let i = 0; i < elementsTitle.length; i++) {
     if (elementsTitle[i].innerText === itemTitle) {
@@ -33,11 +33,15 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
         '.shoppingCartItemQuantity'
       );
       elementQuantity.value++;
-      $('.toast').toast('show');
+      toast();
       updateShoppingCartTotal();
       return;
     }
   }
+
+
+
+
 
   const shoppingCartRow = document.createElement('div');
   const shoppingCartContent = `
@@ -116,3 +120,17 @@ function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
   updateShoppingCartTotal();
 }
+
+
+function toast(){
+  const btnTostada = document.querySelector('.addToCart')
+btnTostada.addEventListener('click', () => {
+  Toastify({
+    text: "Agregar al carrito perfectamente",
+    duration: 3000 , 
+    gravity: "bottom" , 
+    position: "right"
+  })
+}).showToast();
+}
+
