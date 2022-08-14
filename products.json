@@ -1,94 +1,92 @@
-{
-    "products": [
-        {
-            "id": 1,
-            "nombre": "Buzo Triple-K",
-            "precio": 4900,
-            "imagen": "../images/buzo.jpg"
-        },
-        {
-            "id": 2,
-            "nombre": "Buzo Urban",
-            "precio": 4500,
-            "imagen": "../images/buzo5.jpg"
-        },
-        {
-            "id": 3,
-            "nombre": "Buzo Tacuara",
-            "precio": 4700,
-            "imagen": "../images/buzo3.jpg"
-        },
-        {
-            "id": 4,
-            "nombre": "Pantalon Flower",
-            "precio": 3900,
-            "imagen": "../images/pantalones.jpg"
-        },
-        {
-            "id": 5,
-            "nombre": "Buzo BSAS-K",
-            "precio": 4900,
-            "imagen": "../images/buzo bsas.jpg"
-        },
-        {
-            "id": 6,
-            "nombre": "Buzo Colorinche",
-            "precio": 4500,
-            "imagen": "../images/Buzos.jpg"
-        },
-        {
-            "id": 7,
-            "nombre": "Buzo Amarello",
-            "precio": 5700,
-            "imagen": "../images/buzoama.jpg"
-        },
-        {
-            "id": 8,
-            "nombre": "Campera Oslo KOK",
-            "precio": 5200,
-            "imagen": "../images/campera1.jpg"
-        },
-        {
-            "id": 9,
-            "nombre": "Buzo Cruel",
-            "precio": 4600,
-            "imagen": "../images/buzoblanconegro.jpg"
-        },
-        {
-            "id": 10,
-            "nombre": "Buzo Pista",
-            "precio": 4500,
-            "imagen": "../images/buzoblue.jpg"
-        },
-        {
-            "id": 11,
-            "nombre": "Buzo Bielsa",
-            "precio": 4700,
-            "imagen": "../images/buzoloco.jpg"
-        },
-        {
-            "id": 12,
-            "nombre": "Coleccion Pela",
-            "precio": 7800,
-            "imagen": "../images/colecciones.jpg"
-        },
-        {
-            "id": 13,
-            "nombre": "Pantalon Black-k",
-            "precio": 4500,
-            "imagen": "../images/pantalon.jpg"
-        },
-        {
-            "id": 14,
-            "nombre": "Remera Urban-k",
-            "precio": 4700,
-            "imagen": "../images/urban.jpg"
-        },
-        {
-            "id": 15,
-            "nombre": "Coleccion Facha",
-            "precio": 8900,
-            "imagen": "../images/buzo2.jpg"
-        }
-    ]
-}
+[
+    {
+      "id": 1,
+      "nombre": "Buzo Triple-K",
+      "precio": 4900,
+      "imagen": "../images/buzo.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Buzo Urban",
+      "precio": 4500,
+      "imagen": "../images/buzo5.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Buzo Tacuara",
+      "precio": 4700,
+      "imagen": "../images/buzo3.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Pantalon Flower",
+      "precio": 3900,
+      "imagen": "../images/pantalones.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Buzo BSAS-K",
+      "precio": 4900,
+      "imagen": "../images/buzo bsas.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Buzo Colorinche",
+      "precio": 4500,
+      "imagen": "../images/Buzos.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Buzo Amarello",
+      "precio": 5700,
+      "imagen": "../images/buzoama.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Campera Oslo KOK",
+      "precio": 5200,
+      "imagen": "../images/campera1.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Buzo Cruel",
+      "precio": 4600,
+      "imagen": "../images/buzoblanconegro.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Buzo Pista",
+      "precio": 4500,
+      "imagen": "../images/buzoblue.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Buzo Bielsa",
+      "precio": 4700,
+      "imagen": "../images/buzoloco.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Coleccion Pela",
+      "precio": 7800,
+      "imagen": "../images/colecciones.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "Pantalon Black-k",
+      "precio": 4500,
+      "imagen": "../images/pantalon.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "Remera Urban-k",
+      "precio": 4700,
+      "imagen": "../images/urban.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "Coleccion Facha",
+      "precio": 8900,
+      "imagen": "../images/buzo2.jpg"
+    }
+  ]

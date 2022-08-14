@@ -133,6 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const comprarButton = document.querySelector('.comprarButton');
+  comprarButton.addEventListener('click', comprarButtonClicked);
+
 
   /*  Evento para añadir un producto al carrito de la compra */
 
@@ -225,6 +228,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
+  function comprarButtonClicked(){
+    DOMcarrito.innerHTML= '';
+    DOMtotal.innerHTML='';
+  }
+
   function guardarCarritoEnLocalStorage() {
     miLocalStorage.setItem('carrito', JSON.stringify(carrito));
   }
@@ -244,6 +252,9 @@ document.addEventListener('DOMContentLoaded', () => {
   cargarCarritoDeLocalStorage();
   renderizarProductos();
   renderizarCarrito();
+
+ 
+
 });
 
 const API = "../products.json";
